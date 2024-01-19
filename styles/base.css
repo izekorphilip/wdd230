@@ -63,14 +63,12 @@ h3{
 }
 footer{
     background-color: rgb(5, 65, 114);
-    height: 150px;
-    margin-top: 30px;
+    padding: 15px;
 }
 footer p{
-    padding: 3px;
+   
     color: white;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    line-height: 1.5;
-    margin-bottom: 20px;
+    
 }
