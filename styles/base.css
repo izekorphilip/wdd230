@@ -1,31 +1,72 @@
-body{
-    margin: 0;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-main{
-    padding-left: 50px ;
-    padding-right: 50px ;
+
+body {
+	font-family: "Sansita", sans-serif;
 }
-header{
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    height: 200px;
-    background-color: rgb(5, 65, 114);
-   
+
+/* mobile **************************/
+header {
+	background-color: #bbb;
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
 }
+header h1{
+    text-align: left;
+}
+header img{
+    padding-left: 20px;
+    box-shadow: 7px 7px 30px #36454f;
+}
+
+main {
+	max-width: 767px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+nav {
+	background-color: #36454f;
+	margin: 0 auto;
+	max-width: 100%;
+}
+nav ul {
+	list-style-type: none;
+}
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: yellow;
+    transition: 2;
+}
+
+.active {
+	color: yellow;
+}
+
 h1{
     color: white;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: x-large;
     font-weight: 700;
-}
-.first-div{
-   display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 100%;
-    margin-left: 50px;
-    
 }
 .second-div{
     margin-top: 60px;
@@ -45,6 +86,7 @@ h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: x-large;
     font-weight: 700;
+    margin-top: 30px;
 }
 h3{
     text-align: center;
@@ -56,14 +98,25 @@ h3{
     color: white;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+    margin-bottom: 30px;
 }
 .fourth-div{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+.card{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 7px 7px 40px #36454f;
+}
+.card li{
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
 .fifth-div{
 
     font-family: Georgia, 'Times New Roman', Times, serif;
+    list-style-type: none;
 }
 footer{
     background-color: rgb(5, 65, 114);
