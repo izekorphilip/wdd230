@@ -11,7 +11,7 @@ body {
 
 /* mobile **************************/
 header {
-	background-color: #bbb;
+    background-color: rgb(5, 65, 114);
 	display: grid;
     grid-template-columns: 1fr 1fr;
 	align-items: center;
@@ -23,15 +23,15 @@ header h1{
     text-align: left;
 }
 header img{
-    padding-left: 20px;
-    box-shadow: 7px 7px 30px #36454f;
+    margin-left: 20px;
+    box-shadow: 7px 7px 30px #0b1114;
 }
 
 main {
-	max-width: 767px;
+	max-width: 1000px;
 	margin: 0 auto;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding: 20px;
+    padding: 20px;
 }
 
 h1 {
@@ -39,7 +39,7 @@ h1 {
 }
 
 nav {
-	background-color: #36454f;
+	background-color: #171b1f;
 	margin: 0 auto;
 	max-width: 100%;
 }
