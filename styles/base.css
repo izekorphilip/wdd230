@@ -10,6 +10,51 @@ body {
 }
 
 /* mobile **************************/
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+    background: #fff;
+}
+
+#menu.open::before {
+	content: "X";
+    background: #fff;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #333;
+	color: #fff;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
 header {
     background-color: rgb(5, 65, 114);
 	display: grid;
@@ -105,6 +150,7 @@ h3{
 .fourth-div{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.7em;
 }
 .card{
     margin-top: 30px;
@@ -115,10 +161,20 @@ h3{
     margin-left: 15px;
     margin-bottom: 15px;
 }
+ul li{
+    line-height: 1.7em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .fifth-div{
 
     font-family: Georgia, 'Times New Roman', Times, serif;
     list-style-type: none;
+}
+.map iframe{
+    width: 480px;
+    height: 300px;
+    box-shadow: 7px 7px 30px #0b1114;
 }
 footer{
     background-color: rgb(5, 65, 114);
