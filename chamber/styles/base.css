@@ -1,0 +1,176 @@
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1 {
+	text-align: left;
+	font-family: times, serif;
+	font-size: 1.5rem;
+	margin-left: 1rem;
+}
+
+h2 {
+	font-size: 1.2rem;
+	color: navy;
+	text-align: left;
+	margin: 1rem;
+}
+
+
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c8c4db;
+    padding: 20px;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+.list-1, .list-1 a{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	color: #0000;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+.active::before { 
+	content: "👀";  /* just a wayfinding symbol for the user */
+}
+
+.stuff {
+	margin: 0.5m;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: #bed;
+	max-width: 580px;
+	height: 100vh;
+}
+
+.img-1 img{
+    height: 70px;
+    width: 70px;
+    padding: 30px;
+}
+.hero-img {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.hero-img img{
+    width: 100%;
+}
+.hero-text h1{
+
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: auto;
+    text-align: center;
+    margin-top: -100px;
+    line-height: 1em;
+
+}
+.hero-text p{
+    
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: auto;
+    text-align: center;
+    margin-top: -30px;
+    line-height: 1em;
+}
+
+main{
+    margin: 0 auto;
+    padding: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    
+}
+.section-card{
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    gap: 20px;
+    
+   
+}
+.card p , .card-11 p{
+   text-align: center;
+   background: #ecb89a;
+   padding: 20px;
+}
+.card-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+footer{
+    display: flex;
+    margin-top: 20px;
+    padding: 50px;
+    background-color: #c8c4db;
+    justify-content: space-between;
+}
+
+
+/* small view navigation ************************************/
+@media (max-width: 530px) {
+
+    .section-card, .card-1{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
