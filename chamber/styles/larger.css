@@ -9,8 +9,10 @@
 	}
 
 	h2 {
+		font-family: Georgia, serif;
 		font-size: 2rem;
-		text-align: center;
+		text-align: left;
+		font-size: 25px;
 	}
 
 	#menu {
