@@ -8,7 +8,23 @@
 body {
 	font-family: "Sansita", sans-serif;
 }
-
+picture img{
+    width: 100%;
+    height: auto;
+}
+.hero-img{
+    position: relative;
+}
+.hero-text p{
+   	position: absolute;
+	top: 40px;
+	left: 40px;
+	background: radial-gradient(#fff, #0667d6);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1.4rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.80;
+}
 /* mobile **************************/
 #menu {
 	font-size: 1.5rem;

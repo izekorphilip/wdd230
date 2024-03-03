@@ -22,7 +22,7 @@
 <body>
     <header>
         <button id="menu"></button>
-        <div class="logo"><img src="images/favicon.ico" alt=" Website logo"></div>
+        <div class="logo"><img src="images/favicon.webp" alt=" Website logo"></div>
         <h2>Ugbor Chamber of Commerce</h2>
         <div class="list-1">
             <div><a href="https://www.facebook.com">facebook</a></div>
@@ -41,7 +41,11 @@
         </nav>
     </header>
     <div class="hero-img">
-        <img src="images/cha.jpeg" alt="">
+        <picture>
+            <source srcset="images/wdd230-org-small.webp" media="(max-width: 500px)">
+            <source srcset="images/wdd230-org-meduim.webp" media="(max-width: 900px)">
+            <img src="images/wdd230-org-large.webp" alt="People having an office discussion" width="1200" height="600">
+        </picture>
         <div class="hero-text">
             <a href="#">Join the Chamber</a>
         </div>
@@ -59,7 +63,12 @@
             <section class="card">
                 <h2>Weather</h2>
                 <hr class="dashed">
-                <p class="p">⛈ 33°C <strong>Partly Cloudy</strong><br> Humidity: 35%<br> Wind Chill: N/A</p>
+                <ul class="temperature">
+                    <li>⛈ <span id="temperature"></span>&#8451; <strong>Partly Cloudy</strong></li>
+                    <li>Humidity: <span id="windspeed"></span>%</li>
+                    <li>Wind Chill: <span id="windChill"></span>&#8457;</li> 
+                </ul>
+               
             </section>
         </div>
         <section class="card-1">
@@ -98,6 +107,7 @@
     </footer>
 
     <script src="scripts/chamber.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>

@@ -3,15 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-.input{
+
+.input {
     height: 30px;
     width: 30px;
     margin-bottom: -20px;
 }
+
 .dark-mode {
-	background-color: #000;
-	color: #fff;
-	border-color: #eee; 
+    background-color: #000;
+    color: #fff;
+    border-color: #eee;
 }
 
 h1 {
@@ -98,8 +100,9 @@ header {
     content: "👀";
     /* just a wayfinding symbol for the user */
 }
-.hero-text a{
-    border: 1px solid #ecb89a ;
+
+.hero-text a {
+    border: 1px solid #ecb89a;
     background-color: #431eca;
     color: white;
     font-family: Georgia, serif;
@@ -111,10 +114,12 @@ header {
     left: 70px;
     box-shadow: 2px 2px 22px #37353f;
 }
-.hero-text a:hover{
+
+.hero-text a:hover {
     background-color: #251e1a;
     color: rgb(18, 103, 177);
 }
+
 .img-1 img {
     height: 70px;
     width: 70px;
@@ -122,13 +127,13 @@ header {
 }
 
 .hero-img {
-    width: 100%;
-    height: auto;
     position: relative;
 }
 
 .hero-img img {
     width: 100%;
+    height: auto;
+
 }
 
 .hero-text h1 {
@@ -168,7 +173,8 @@ main {
     gap: 20px;
 }
 
-.card-11, .card{
+.card-11,
+.card {
     background: #c8c4db;
     padding: 20px;
 }
@@ -180,33 +186,45 @@ main {
     gap: 2px;
     box-shadow: 2px 2px 22px #37353f;
 }
-.p{
+
+.p {
     text-align: center;
 }
+
 hr {
     margin-top: 10px;
     margin-bottom: 20px;
     border-bottom: 0;
 }
-.card-11 p{
+
+.temperature li {
+    list-style: none;
+    
+}
+
+.card-11 p {
     color: blue;
     text-align: center;
 }
-div .card-p{
+
+div .card-p {
     color: hsl(0, 0%, 0%);
     text-align: right;
 }
+
 footer {
     margin-top: 20px;
     padding: 50px;
     background-color: #ecb89a;
     justify-content: space-between;
 }
-.most-last{
+
+.most-last {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.last{
+
+.last {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
