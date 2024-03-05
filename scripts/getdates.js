@@ -1,4 +1,6 @@
 
+const day = new Date();
+let year = day.getFullYear();
 
 
 document.getElementById('year').innerHTML =  (`Ⓒ ${year}`);
