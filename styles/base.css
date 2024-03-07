@@ -163,6 +163,11 @@ h3{
     border-top-left-radius: 5px;
     margin-bottom: 30px;
 }
+span { 
+    display: flex; 
+    justify-content: center ;
+    align-items: center;
+}
 .fourth-div{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
