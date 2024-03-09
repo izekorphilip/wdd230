@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 .input {
     height: 30px;
     width: 30px;
@@ -49,11 +48,13 @@ h3 {
 }
 
 header {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #ecb89a;
     padding: 20px;
+    width: 100%;
 }
 
 .logo img {
@@ -145,7 +146,6 @@ header {
     text-align: center;
     margin-top: -100px;
     line-height: 1em;
-
 }
 
 .hero-text p {
@@ -228,8 +228,41 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+#m-discover{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 150px;
+    margin-left: 80px;
 
+}
+#discover img{
+    width: 100%;
+    height: auto;
+    padding-left: 150px;
+    margin-top : -40px; 
+}
+aside{
+    background-color: #431eca;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 110px;
+    width: 300px;
+    z-index: -1;
 
+}
+aside h3,p{
+    padding: 15px;
+    margin-top: -10px;
+    text-align: center;
+}
+.aside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
 /* small view navigation ************************************/
 @media (max-width: 530px) {
 
@@ -239,4 +272,20 @@ footer {
         grid-template-columns: 1fr;
         gap: 20px;
     }
+    
+    #m-discover{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    aside{
+        position: sticky;
+    }
+}
+
+
+@media (max-width: 1190px) {
+	aside {
+		width: 230px;
+	}
+
 }
