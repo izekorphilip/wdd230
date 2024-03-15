@@ -1,0 +1,37 @@
+
+
+body {
+    font-family: Georgia, Arial, serif;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    font-size: .85rem;
+    font-family: Georgia, Arial, serif;
+
+}
+
+table {
+    
+    margin: 100px auto;
+    border: thin solid var(--border);
+    box-shadow: 0 0 10px black;
+    border-collapse: collapse;
+}
+thead .f1, .leave{
+    background-color: black;
+    color: white;
+}
+th, td {
+	padding: 20px 30px;
+	border: 1px solid black;
+    text-align: center;
+}
+thead{
+    background-color: rgb(112, 103, 103);
+    color: white;
+}
+tbody tr:nth-child(even){
+    background-color: rgb(228, 229, 230);
+}

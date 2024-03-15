@@ -27,3 +27,17 @@ checkButton.addEventListener('click', () => {
 	footer.classList.toggle('dark-mode');
 });
 
+
+
+let visited = document.querySelector('.visited');
+
+let numVisited = Number(window.localStorage.getItem("visitedNumber")) || 0;
+
+if(numVisited !== 0){
+	visited.textContent = numVisited;
+} else{
+	visited.textContent = `This is your first time of visiting. You are welcome🎁`
+}
+numVisited++;
+
+localStorage.setItem('visitedNumber', numVisited);
