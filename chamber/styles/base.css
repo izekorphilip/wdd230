@@ -109,12 +109,12 @@ header {
     background-color: #431eca;
     color: white;
     font-family: Georgia, serif;
-    padding: 12px;
+    padding: 20px;
     text-decoration: none;
     border-radius: 6px;
     position: absolute;
-    top: 250px;
-    left: 250px;
+    top: 200px;
+    left: 40px;
     box-shadow: 2px 2px 22px #37353f;
 }
 
@@ -228,13 +228,16 @@ footer {
 }
 
 .last {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display:flex;
+    gap: 20px;
+    color: rgba(255, 0, 0, 0.945);
+    line-height: 2rem;
+    justify-content: space-between;
 }
 
 
 #m-discover {
-    margin-top: 95px;
+    margin-top: 94px;
 }
 
 aside {
@@ -248,8 +251,8 @@ aside {
 }
 
 aside h3 {
-    margin-top: 18px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #discover img {
@@ -286,5 +289,8 @@ aside h3 {
         width: 100%;
         margin-top: 140px;
     }
-   
+    .hero-text a{
+        padding: 5px;
+        font-size: 15px;
+    }
 }

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philip Izekor - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="This page content is about my wdd230 Web Frontend Development class. ">
+    <meta name="author" content="Philip Izekor">
+    <meta property="og:title" content="BYU-Idaho wdd230 portal page"> 
+    <meta property="og:type" content="Web Frontend Development Project">
+    <meta property="og:image" content="https://www.worldatlas.com/r/w1200/upload/04/3f/7a/shutterstock-1383820007.jpg">
+    <meta property="og:url" content="https://izekorphilip.github.io/wdd230">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/mediaquery.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+   <header>  
+        <img src="images/myphoto.jpg" alt="Philip Izekor image" width="100" >
+        <h1>Philip Izekor</h1>
+    </header>   
+        <button id="menu"></button>     
+        <nav class="navigation">
+            <ul>
+                <li><a href="index">Home</a></li>
+                <li><a href="lesson3/chamber-site-plan.html">Site plan</a></li>
+                <li><a href="chamber/index.html">Chamber</a></li>
+                <li><a href="https://www.byu.edu">BYU-Idaho</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/philip/4?lang=eng&id=p13#p13">Scripture</a></li>
+            </ul>
+        </nav>
+       
+   <main>
+        <form class="formset">
+            <div class="display"></div>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label>First Name* <input type="text" name="fname" id="userfname" required></label>
+                <label>Last Name* <input type="text" name="lname" id="userfname" required></label>
+                <label>Password* <input type="password" name="pwd" id="pwd" placeholder="At least 8 characters long." pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></label> 
+                <label>Confirm Passwors* <input type="password" name="pwd2" id="pwd2" required></label> 
+                <label for="email"> Email*  <input type="email" id="email" name="email" placeholder="Your byui email address" title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required></label>
+                <div class="stars">
+                    <input type="radio" id="fivestar" name="stars" value="5" ><label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="stars" value="4" ><label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="stars" value="3"><label for="threestar"></label>
+                    <input type="radio" id="twostar" name="stars" value="2"><label for="twostar"></label>
+                    <input type="radio" id="onestar" name="stars" value="1"><label for="onestar"></label>
+                </div>
+                <input type="submit" value="Validate" id="oclick">         
+            </fieldset>
+            <div class="button"></div>
+        </form>        
+   </main>    
+   <footer>
+        <p id="year"></p>
+        <p>&#128526; Philip Izekor </p><br>
+        <p>Nigeria</p>
+        <p id="lastModified"></p>
+   </footer>
+<script src="scripts/getdates.js"></script>
+<script src="scripts/form.js"></script>
+</body>
+</html>
+
+

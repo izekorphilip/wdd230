@@ -1,0 +1,109 @@
+  :root {
+      --orange: #d35603;
+      --blue: #050772;
+      --ash: #555;
+  }
+
+
+
+
+  .formset fieldset {
+      margin: 2rem;
+      border: 1px solid #dddd;
+      border-radius: 6px;
+      padding: .5rem 2%;
+  }
+
+  .formset legend {
+      color: var(--orange);
+      padding: 0 .5rem;
+  }
+
+  .formset label {
+      display: block;
+      padding-top: 1rem;
+      color: var(--blue);
+  }
+
+  .formset div {
+      padding-top: 1rem;
+      color: #445ba5;
+      font-size: .9rem;
+  }
+
+  .formset input[type="text"],
+  .formset input[type="email"],
+  .formset input[type="password"] {
+      background-color: #eee;
+      display: block;
+      border: solid 1px #999;
+      border-radius: 6px;
+      padding: .75rem;
+      color: var(--ash);
+      width: 100%;
+      max-width: 400px;
+  }
+
+  .formset input[type="radio"],
+  .formset input[type="checkbox"] {
+      margin-right: 6px;
+  }
+
+  .formset input[type="submit"] {
+      border: none;
+      background-image: linear-gradient(#179b17, #135706);
+      color: #fff;
+      border-radius: 6px;
+      padding: .8rem;
+      width: 96%;
+      max-width: 400px;
+      margin: 2rem 2% 2rem 1%;
+      box-shadow: 1px 1px 4px #999;
+      appearance: none;
+  }
+
+  .formset input:required {
+      border-right: solid 5px rgb(255, 6, 6);
+  }
+
+  .formset input:required:valid {
+      border-right: solid 5px rgb(7, 170, 7);
+  }
+
+  /* stars */
+  input[type="radio"] {
+      display: none;
+      position: relative;
+      caret-color: rgba(0, 0, 0, 0);
+  }
+
+  .stars {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: left;
+  }
+
+  .stars>label {
+      color: gold;
+      width: 30px;
+      height: 30px;
+      font-size: 2rem;
+      margin-left: 5px;
+      display: flex;
+      align-items: center;
+      caret-color: rgba(0, 0, 0, 0);
+      /* remove blinking cursor*/
+  }
+
+  .stars>label:hover {
+      color: #000;
+  }
+
+  .stars>label::before {
+      content: "\2606";
+  }
+
+  .stars input:checked~label::before {
+      content: "\";
+
+  }
