@@ -25,7 +25,6 @@ h1 {
 
 h3 {
     font-family: Georgia, serif;
-    font-size: 200;
 }
 
 
@@ -254,7 +253,12 @@ aside h3 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
+.gallery{
+    padding: 20px;
+    text-align: center;
+    font-family: Georgia, serif;
+    
+}
 #discover img {
     width: 100%;
     height: auto;
