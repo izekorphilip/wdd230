@@ -63,7 +63,7 @@ const visitsDisplay = document.querySelector(".visited");
 
 let firstvisit = window.localStorage.getItem('visitedOne');
 if (firstvisit == null){
-    visitsDisplay.textContent = 'Welcome! Let us know if you have any';   
+    visitsDisplay.textContent = 'Welcome! Let us know if you have any questions.';   
 }else{
     visitsDisplay.textContent = 'Back so soon! Awesome!'
 }
