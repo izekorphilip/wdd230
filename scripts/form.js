@@ -21,12 +21,16 @@ function passwordPass(){
 
 }
 
-const button = document.querySelector(".button");
+const rangevalue = document.getElementById("rangevalue");
+const range = document.getElementById("r");
 
-function displayText() {
-    let text = document.getElementById( 'click', ".button");
-    text.style.display = "block";
-  }
+// RANGE event listener
+range.addEventListener('change', displayRatingValue);
+range.addEventListener('input', displayRatingValue);
+
+function displayRatingValue() {
+    rangevalue.innerHTML = range.value;
+}
 
 /*
 const kp1 = document.querySelector("#keyphrase");

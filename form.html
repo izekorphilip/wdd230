@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Philip Izekor - WDD 230 - Web Frontend Development</title>
+    <title>BYUI Access Form</title>
     <meta name="description" content="This page content is about my wdd230 Web Frontend Development class. ">
     <meta name="author" content="Philip Izekor">
     <meta property="og:title" content="BYU-Idaho wdd230 portal page"> 
@@ -33,23 +33,29 @@
         </nav>
        
    <main>
-        <form class="formset">
+        <form class="formset" method="get" action="record.html">
             <div class="display"></div>
             <fieldset>
                 <legend>Contact Information</legend>
-                <label>First Name* <input type="text" name="fname" id="userfname" required></label>
-                <label>Last Name* <input type="text" name="lname" id="userfname" required></label>
-                <label>Password* <input type="password" name="pwd" id="pwd" placeholder="At least 8 characters long." pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></label> 
-                <label>Confirm Passwors* <input type="password" name="pwd2" id="pwd2" required></label> 
+                <label for="fullname">Full Name* <input type="text" name="fname" id="fullname" required></label>
+                <label for="pwd">Password* <input type="password" name="pwd" id="pwd" placeholder="At least 8 characters long." pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></label> 
+                <label for="pwd2">Confirm Password* <input type="password" name="pwd2" id="pwd2" required></label> 
                 <label for="email"> Email*  <input type="email" id="email" name="email" placeholder="Your byui email address" title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required></label>
-                <div class="stars">
-                    <input type="radio" id="fivestar" name="stars" value="5" ><label for="fivestar"></label>
-                    <input type="radio" id="fourstar" name="stars" value="4" ><label for="fourstar"></label>
-                    <input type="radio" id="threestar" name="stars" value="3"><label for="threestar"></label>
-                    <input type="radio" id="twostar" name="stars" value="2"><label for="twostar"></label>
-                    <input type="radio" id="onestar" name="stars" value="1"><label for="onestar"></label>
+                <label for="r">INPUT: range, min, max, datalist, required</label>
+                <div id="rangevalue">0</div>
+                    <input type="range" id="r" name="r" min="0" max="5" value="0" step="1" list="rangevalues">
+                    <datalist id="rangevalues">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </datalist>
+                <div class="ref">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">MDN Input: Range</a>
                 </div>
-                <input type="submit" value="Validate" id="oclick">         
+                <input type="submit" value="Get your Transcripts " id="oclick">         
             </fieldset>
             <div class="button"></div>
         </form>        

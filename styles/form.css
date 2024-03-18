@@ -94,16 +94,3 @@
       caret-color: rgba(0, 0, 0, 0);
       /* remove blinking cursor*/
   }
-
-  .stars>label:hover {
-      color: #000;
-  }
-
-  .stars>label::before {
-      content: "\2606";
-  }
-
-  .stars input:checked~label::before {
-      content: "\";
-
-  }
