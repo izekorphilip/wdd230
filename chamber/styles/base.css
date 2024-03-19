@@ -267,8 +267,95 @@ aside h3 {
 #discover img:hover{
     opacity: 0.3;
   }
-  
 
+
+ /* join form design.*/ 
+
+
+
+.conform fieldset{
+    margin: 2rem;
+    border: 1px solid #dddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+.conform legend{
+    color: #d35603;
+    padding: 0 .5rem;
+}
+.conform label{
+    display: block;
+    padding-top: 1rem;
+    color: #050772;
+}
+.conform div{
+    padding-top: 1rem;
+    color: #445ba5;
+    font-size: .9rem;
+}
+.conform input[type="text"],
+.conform input[type="tel"],
+.conform input[type="email"],
+.conform input[type="number"]{
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+}
+.conform input[type="radio"]{
+    margin-right: 6px;
+}
+
+.conform input:required{
+    border-right: solid 5px rgb(255, 6, 6);
+}
+.conform input:required:valid{
+    border-right: solid 5px rgb(7, 170, 7);
+}
+.member{
+    color: #d35603;
+    margin-top: 20px;
+}
+.form-div{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.div-form{
+   padding-top: 150px;
+   margin-left: 50px;
+   margin-right: 50px;
+}
+.div-form h3{
+    font-family: Georgia, serif;
+    margin-bottom: 20px;
+}
+.div-form p{
+    font-family: Georgia, serif;
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+}
+.allmembership{
+    display: none;
+}
+.btn{
+    
+    width: 87%;
+    margin:  2% 2rem 2%;
+    height: 50px;
+    border: none;
+    background-image: linear-gradient(#179b17, #135706);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    box-shadow: 1px 1px 4px #999;
+    appearance: none;
+}
 
 /* small view navigation ************************************/
 @media (max-width: 530px) {
