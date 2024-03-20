@@ -3,19 +3,38 @@ let detail = {
     age: 45
 };
 
-let success = JSON.stringify(detail);
-localStorage.setItem('info', "success");
+localStorage.setItem('right', JSON.stringify(detail));
+localStorage.getItem('right');
+console.log(localStorage);
 
-let deDone = JSON.parse(localStorage.getItem("info"));
-console.log(deDone);
 
-deDone.clear();
 
-const outPut = ['Philip', 'PAUL', 'Blessing'];
+localStorage.clear();
 
-localStorage.setItem('name', JSON.stringify(outPut));
+let comparedate = (d1, d2) => {
+    let date01 = new Date (d1).getTime();
+    let date02 = new Date (d2).getTime();
 
-const input = JSON.parse(localStorage.getItem('name'));
+if (date01 > date02){
+    console.log(`${d1} this date1 is greater than ${d2}`);
+}else if (date01 < date02){
+    console.log(`${d2} this date1 is greater ${d1}`)
+}else{
+    console.log('the both are equal')
+}
+}
+comparedate("01/01/2001", "01/01/2001")
+comparedate("06/21/2022", "07/28/2021");
+;
+comparedate("11/01/2021", "02/01/2022"); 
 
-console.log(input);
+let date1 = new Date("06/21/2020").getTime();
+let date2 = new Date("07/28/2021").getTime();
 
+if (date1 > date2){
+    console.log('this date1 is greater');
+}else if (date1 < date2){
+    console.log('this date2 is greater');
+}else{
+    console.log('the both are equal')
+}
