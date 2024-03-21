@@ -1,0 +1,36 @@
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    background-color: rgba(241, 239, 239, 0.986);
+    gap: 10px;
+    padding: 15px;
+    box-shadow: 0px 2px 20px 2px;
+}
+
+#cards img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 2px 10px 2px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+h2,
+h1,
+p {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+h1{
+    padding: 20px;
+}
+
+section {
+    border: solid 1px;
+}
+footer{
+    padding: 30px;
+    text-align: center;
+}
