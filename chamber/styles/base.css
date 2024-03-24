@@ -227,76 +227,131 @@ footer {
 }
 
 .last {
-    display:flex;
+    display: flex;
     gap: 20px;
     color: rgba(255, 0, 0, 0.945);
     line-height: 2rem;
     justify-content: space-between;
 }
 
+/* discover page css*/
+aside {
+    margin-left: 20px;
+    border: solid 1px;
+    box-shadow: 0px 3px 5px #37353f;
+}
+
+.aside-div {
+    text-align: center;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+aside button{
+    height: 50px;
+    width: 100px;
+    background-color: #585757;
+    color: white;
+    border-radius: 5px;
+    border: 0; 
+}
+
+.aside-div h4 {
+    margin-bottom: 15px;
+    text-align: center;
+}
 
 #m-discover {
-    margin-top: 94px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 130px;
+    gap: 20px;
 }
 
-aside {
-    position: fixed;
-    width: 300px;
-    padding: 1px;
-    text-align: center;
-    background-color: #eee1e1;
+#m-discover h3 {
+    margin-top: 10px;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#m-discover p{
     line-height: 1.5rem;
-    z-index: -1;
-}
-
-aside h3 {
     margin-top: 10px;
-    margin-bottom: 10px;
+    padding: 10px;
 }
-.gallery{
-    padding: 20px;
+#discover {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    font-family: Georgia, serif;
-    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
-#discover img {
+
+#m-discover img {
     width: 100%;
-    height: auto;
-    padding-left: 320px;
+    height: auto;;
+    border-radius: 5px;
 }
-#discover img:hover{
+
+.numvisit {
+    margin-top: 20px;
+    background-color: #eef5ec;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 2px 2px 22px #37353f;
+}
+.aside-div img {
+    padding: 20px;
+
+}
+#discover:hover {
     opacity: 0.3;
-  }
+    zoom: 0.9;
+    transition-duration: 2s;
+}
+#discover h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 25px;
+    text-align: center;
+}
 
 
- /* join form design.*/ 
+
+/* join form design.*/
 
 
 
-.conform fieldset{
+.conform fieldset {
     margin: 2rem;
     border: 1px solid #dddd;
     border-radius: 6px;
     padding: .5rem 2%;
 }
-.conform legend{
+
+.conform legend {
     color: #d35603;
     padding: 0 .5rem;
 }
-.conform label{
+
+.conform label {
     display: block;
     padding-top: 1rem;
     color: #050772;
 }
-.conform div{
+
+.conform div {
     padding-top: 1rem;
     color: #445ba5;
     font-size: .9rem;
 }
+
 .conform input[type="text"],
 .conform input[type="tel"],
 .conform input[type="email"],
-.conform input[type="number"]{
+.conform input[type="number"] {
     background-color: #eee;
     display: block;
     border: solid 1px #999;
@@ -306,47 +361,56 @@ aside h3 {
     width: 100%;
     max-width: 400px;
 }
-.conform input[type="radio"]{
+
+.conform input[type="radio"] {
     margin-right: 6px;
 }
 
-.conform input:required{
+.conform input:required {
     border-right: solid 5px rgb(255, 6, 6);
 }
-.conform input:required:valid{
+
+.conform input:required:valid {
     border-right: solid 5px rgb(7, 170, 7);
 }
-.member{
+
+.member {
     color: #d35603;
     margin-top: 20px;
 }
-.form-div{
+
+.form-div {
     display: flex;
     gap: 10px;
     justify-content: center;
     align-items: center;
 }
-.div-form{
-   padding-top: 150px;
-   margin-left: 50px;
-   margin-right: 50px;
+
+.div-form {
+    padding-top: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
-.div-form h3{
+
+.div-form h3 {
     font-family: Georgia, serif;
     margin-bottom: 20px;
 }
-.div-form p{
+
+.div-form p {
     font-family: Georgia, serif;
     line-height: 1.5rem;
     margin-bottom: 20px;
 }
-.allmembership{
+
+.allmembership {
     display: none;
 }
-.btn{
-    
+
+.btn {
+
     width: 87%;
-    margin:  2% 2rem 2%;
+    margin: 2% 2rem 2%;
     height: 50px;
     border: none;
     background-image: linear-gradient(#179b17, #135706);
@@ -359,7 +423,7 @@ aside h3 {
 
 /* week 9 */
 
-.directory-card{
+.directory-card {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 20px;
@@ -368,73 +432,86 @@ aside h3 {
 }
 
 .menu {
-	margin: 1rem auto;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 0.5rem;
-	background-color: rgb(230, 230, 230);
-	text-align: center;
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: rgb(230, 230, 230);
+    text-align: center;
     color: black;
     margin-top: 120px;
 }
+
 .menu button {
-	padding: 1rem;
-	font-weight: 700;
+    padding: 1rem;
+    font-weight: 700;
 }
 
-.directory-card section{
+.directory-card section {
     box-shadow: 0px 1px 4px 1px;
     padding: 10px;
 }
-.directory-card p,  h3{
+
+.directory-card p,
+h3 {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.5rem;
-  
+
 }
-.directory-card img{
+
+.directory-card img {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-.directory-card h3{
+
+.directory-card h3 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.directory-card a{
-    display:block;
+
+.directory-card a {
+    display: block;
     text-align: center;
-    text-decoration:underline;
+    text-decoration: underline;
 }
-.list{
-   display: flex;
-   flex-direction: column;
+
+.list {
+    display: flex;
+    flex-direction: column;
 }
-.list section{
+
+.list section {
     display: grid;
     grid-template-columns: 2fr 3fr 1fr 1fr 2fr 2fr 1fr 1fr;
     margin: 0;
-	padding: 0.25rem;
+    padding: 0.25rem;
     text-align: center;
 }
-.list section > * {
-	margin: 0 1rem;
+
+.list section>* {
+    margin: 0 1rem;
 }
-.list section img{
+
+.list section img {
     display: none;
 }
+
 .list section:nth-child(even) {
-	background-color: rgb(230, 230, 230);
+    background-color: rgb(230, 230, 230);
 }
+
 .list section h3 {
-	font-size: 1rem;
+    font-size: 1rem;
     font-weight: 500;
-	font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 section p {
-	font-weight: 500;
-	font-size: smaller;
+    font-weight: 500;
+    font-size: smaller;
 }
+
 
 /* small view navigation ************************************/
 @media (max-width: 530px) {
@@ -446,20 +523,19 @@ section p {
         gap: 20px;
     }
 
-    #discover {
+    #m-discover {
         display: grid;
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
     }
-    #discover img{
+
+    #discover img {
         padding: 0;
         padding-top: 10px;
     }
-    aside{
-        position: sticky;
-        width: 100%;
-        margin-top: 140px;
-    }
-    .hero-text a{
+
+
+
+    .hero-text a {
         padding: 5px;
         font-size: 15px;
     }

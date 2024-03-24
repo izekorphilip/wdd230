@@ -68,4 +68,4 @@ if (firstvisit == null){
     visitsDisplay.textContent = 'Back so soon! Awesome!'
 }
 localStorage.setItem('visitedOne', 1);
-localStorage
+
