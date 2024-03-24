@@ -357,6 +357,85 @@ aside h3 {
     appearance: none;
 }
 
+/* week 9 */
+
+.directory-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: rgb(230, 230, 230);
+	text-align: center;
+    color: black;
+    margin-top: 120px;
+}
+.menu button {
+	padding: 1rem;
+	font-weight: 700;
+}
+
+.directory-card section{
+    box-shadow: 0px 1px 4px 1px;
+    padding: 10px;
+}
+.directory-card p,  h3{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5rem;
+  
+}
+.directory-card img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.directory-card h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.directory-card a{
+    display:block;
+    text-align: center;
+    text-decoration:underline;
+}
+.list{
+   display: flex;
+   flex-direction: column;
+}
+.list section{
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr 1fr 2fr 2fr 1fr 1fr;
+    margin: 0;
+	padding: 0.25rem;
+    text-align: center;
+}
+.list section > * {
+	margin: 0 1rem;
+}
+.list section img{
+    display: none;
+}
+.list section:nth-child(even) {
+	background-color: rgb(230, 230, 230);
+}
+.list section h3 {
+	font-size: 1rem;
+    font-weight: 500;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+section p {
+	font-weight: 500;
+	font-size: smaller;
+}
+
 /* small view navigation ************************************/
 @media (max-width: 530px) {
 
