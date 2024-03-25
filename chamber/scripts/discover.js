@@ -1,12 +1,10 @@
 
-
+/*
 
 const day = new Date();
+
+
 let year = day.getFullYear();
-
-
-document.getElementById('year').innerHTML = (`Ⓒ ${year}`);
-
 document.getElementById('lastModified').innerHTML = (`Last Modifification: ${document.lastModified}`);
 
 /*
@@ -55,11 +53,11 @@ localStorage.clear();
 
 // 💡A client can view the localStorage data using the Applications panel in the browsers's DevTools - check it out on any major site.
 
-*/
 
+*/
 let newDate = localStorage.setItem( 'current', Date.now());
 
-const visitsDisplay = document.querySelector(".visited");
+const visitsDisplay = document.querySelector(".newvisited");
 
 let firstvisit = window.localStorage.getItem('visitedOne');
 if (firstvisit == null){
