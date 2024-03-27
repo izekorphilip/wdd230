@@ -85,6 +85,8 @@ header {
     padding: 1rem;
     text-align: center;
     text-decoration: none;
+    font-size: large;
+    font-weight: 700;
 }
 
 .navigation a:hover {
@@ -112,8 +114,8 @@ header {
     text-decoration: none;
     border-radius: 6px;
     position: absolute;
-    top: 200px;
-    left: 40px;
+    top: 50%;
+    left: 50%;
     box-shadow: 2px 2px 22px #37353f;
 }
 
@@ -139,27 +141,6 @@ header {
 
 }
 
-.hero-text h1 {
-
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    left: auto;
-    text-align: center;
-    margin-top: -100px;
-    line-height: 1em;
-}
-
-.hero-text p {
-
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    left: auto;
-    text-align: center;
-    margin-top: -30px;
-    line-height: 1em;
-}
 
 main {
     margin: 0 auto;
@@ -169,50 +150,84 @@ main {
 
 }
 
-.section-card {
+/* discover page css*/
+
+
+.section-cardd {
     display: grid;
-    grid-template-columns: 1fr 500px;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    line-height: 2rem;
+
 }
 
-.card-11,
+.section-cardd p {
+    padding: 15px;
+}
+
+.section-cardd h1 {
+    line-height: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.section-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.div-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
 .card {
-    background: #c8c4db;
+    background-color: #ececec;
     padding: 20px;
+    box-shadow: 0px 3px 5px #37353f;
+    line-height: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    list-style: none;
 }
 
 .card-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 20px;
-    gap: 2px;
-    box-shadow: 2px 2px 22px #37353f;
+    text-align: center;
+    margin-top: 50px;
+    gap: 50px;
 }
 
-.p {
+.card-11 {
+    background-color: #caccca;
+    box-shadow: 0px 3px 5px #44414d;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 2rem;
     text-align: center;
 }
 
-hr {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    border-bottom: 0;
+.card-11 h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.temperature li {
-    list-style: none;
-
+.card li {
+    list-style-type: none;
 }
 
-.card-11 p {
-    color: blue;
+.excos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     text-align: center;
+    row-gap: 50px;
+    margin-top: 30px;
+    margin-left: 22px;
+
 }
 
-div .card-p {
-    color: hsl(0, 0%, 0%);
-    text-align: right;
-}
 
 footer {
     margin-top: 20px;
@@ -244,20 +259,22 @@ aside {
 .aside-div {
     text-align: center;
 }
-.button{
+
+.button {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 15px;
     margin-top: 10px;
 }
-aside button{
+
+aside button {
     height: 50px;
     width: 100px;
     background-color: #585757;
     color: white;
     border-radius: 5px;
-    border: 0; 
+    border: 0;
 }
 
 .aside-div h4 {
@@ -277,11 +294,13 @@ aside button{
     padding: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-#m-discover p{
+
+#m-discover p {
     line-height: 1.5rem;
     margin-top: 10px;
     padding: 10px;
 }
+
 #discover {
     display: flex;
     flex-direction: column;
@@ -292,7 +311,8 @@ aside button{
 
 #m-discover img {
     width: 100%;
-    height: auto;;
+    height: auto;
+    ;
     border-radius: 5px;
 }
 
@@ -303,15 +323,18 @@ aside button{
     padding: 20px;
     box-shadow: 2px 2px 22px #37353f;
 }
+
 .aside-div img {
     padding: 20px;
 
 }
+
 #discover:hover {
     opacity: 0.3;
     zoom: 0.9;
     transition-duration: 2s;
 }
+
 #discover h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 25px;
@@ -517,10 +540,33 @@ section p {
 @media (max-width: 530px) {
 
     .section-card,
-    .card-1 {
+    .card-1,
+    .div-card,
+    .section-div,
+    .section-cardd {
         display: grid;
         grid-template-columns: 1fr;
         gap: 20px;
+        justify-content: flex-end;
+        align-items: center;
+
+    }
+
+    .hr-1 {
+        margin-top: 15px;
+    }
+
+    .section-cardd p {
+        line-height: 1.5rem;
+    }
+
+    .section-cardd img {
+        display: none;
+    }
+
+    .section-cardd h1 {
+        margin-left: 20px;
+        line-height: 2rem;
     }
 
     #m-discover {
@@ -533,10 +579,18 @@ section p {
         padding-top: 10px;
     }
 
-
+    .hero-img{
+        position: relative;
+    }
+    .hero-img img {
+        margin-top: 150px;
+    }
 
     .hero-text a {
         padding: 5px;
         font-size: 15px;
+        position: absolute;
+        top: 65%;
+        left: 35%;
     }
 }
