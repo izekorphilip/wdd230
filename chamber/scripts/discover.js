@@ -1,10 +1,8 @@
 
-/*
-
 const day = new Date();
 
 
-let year = day.getFullYear();
+//let year = day.getFullYear();
 document.getElementById('lastModified').innerHTML = (`Last Modifification: ${document.lastModified}`);
 
 /*
@@ -55,15 +53,37 @@ localStorage.clear();
 
 
 */
-let newDate = localStorage.setItem( 'current', Date.now());
+//let newDate = localStorage.setItem( 'current', Date.now());
 
 const visitsDisplay = document.querySelector(".newvisited");
 
-let firstvisit = window.localStorage.getItem('visitedOne');
-if (firstvisit == null){
-    visitsDisplay.textContent = 'Welcome! Let us know if you have any questions.';   
+let firstvisit = window.localStorage.getItem('visitedOne') || 0 ;
+if (firstvisit !== 0){
+    visitsDisplay.textContent = firstvisit;
+
+}else if(firstvisit > day.getTime(24)){
+    visitsDisplay.textContent = 'Back so soon! Awesome!'
+}
+ else{
+    visitsDisplay.textContent = 'Welcome! Let us know if you have any questions'
+}
+firstvisit++
+window.localStorage.setItem('visitedOne', firstvisit);
+
+
+    /*
+     else if(firstvisit == 1){
+    let lastvisit = new Date(firstvisit)
+    let today = new Date()
+    let timeDifference = Math.floor((today.getTime() - lastvisit.getTime()) / (24 * 60 * 60 * 1000))
+    visitsDisplay.textContent = `You last visited ${timeDifference} days ago`
+}
+    const difference = Math.floor((today.getTime() - lastTime.getTime()) / (24 * 60 * 60 * 1000))
+    visitsDisplay.textContent = 'Welcome! Let us know if you have any questions.';  
+    visitsDisplay.textContent = `You visited our website ${difference} days ago`
 }else{
     visitsDisplay.textContent = 'Back so soon! Awesome!'
 }
-localStorage.setItem('visitedOne', 1);
+window.localStorage.setItem('visitedOne', day.toString());
 
+*/

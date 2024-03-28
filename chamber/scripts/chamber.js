@@ -1,6 +1,8 @@
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
+
+
 hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	hamButton.classList.toggle('open');
@@ -33,11 +35,70 @@ let visited = document.querySelector('.visited');
 
 let numVisited = Number(window.localStorage.getItem("visitedNumber")) || 0;
 
-if(numVisited !== 0){
+if (numVisited !== 0) {
 	visited.textContent = numVisited;
-} else{
+} else {
 	visited.textContent = `This is your first time of visiting. You are welcome🎁`
 }
 numVisited++;
 
 localStorage.setItem('visitedNumber', numVisited);
+
+
+const humidity = document.querySelector('#humidity');
+const temperature = document.querySelector('#temperature');
+const weatherDesc = document.querySelector('#description');
+const weatherIcon = document.querySelector('#weather-icon');
+let WeatherForcast = document.querySelector('#weatherforcast');
+let windSpeed = document.querySelector('#windspeed');
+const firstDay = document.querySelector('#firstday');
+const secondDay = document.querySelector('#secondday');
+const thirdDay = document.querySelector('#thirdday');
+
+const url = 'https://api.openweathermap.org/data/2.5/forecast?lat=6.28&lon=5.59&units=imperial&appid=852bd7cf96a748cbfa8371397a65496c';
+
+async function getWeatherApi() {
+	try {
+		const response = await fetch(url);
+		if (response.ok) {
+			const data = await response.json();
+			console.log(data);
+			displayweatherApi(data)
+		} else {
+			throw Error(await response.text())
+		}
+	} catch (error) {
+		console.log(error);
+	}
+}
+getWeatherApi();
+
+function displayweatherApi(current) {
+	const iconsrc = `https://openweathermap.org/img/w/${current.list[0].weather[0].icon}.png`;
+	weatherIcon.setAttribute('src', iconsrc);
+	weatherIcon.setAttribute('alt', 'weather section');
+	humidity.innerHTML = `Current Humidity: ${current.list[0].main.temp} &deg;F`;
+	temperature.innerHTML = `Temperature: ${current.list[0].main.humidity} &deg;F`;
+	weatherDesc.innerHTML = `${current.list[0].weather[0].description}`;
+	windSpeed.textContent = `Windspeed: ${current.list[0].wind.speed} m/s`;
+
+
+	firstDay.innerHTML = `${current.list[6].dt_txt}: ${current.list[6].main.temp} &deg;F`;
+	secondDay.innerHTML = `${current.list[14].dt_txt}: ${current.list[14].main.temp} &deg;F`;
+	thirdDay.innerHTML = `${current.list[22].dt_txt}: ${current.list[22].main.temp} &deg;F`;
+}	
+
+const meetBtn = document.querySelector('.meeting-btn');
+
+const invite = document.querySelector('.invite-message')
+
+setTimeout(invitee, 3000)
+meetBtn.addEventListener('click',removeBtn);
+function removeBtn(){
+	invite.remove()
+}
+
+function invitee(){
+	invite.style.display = 'block'
+
+}

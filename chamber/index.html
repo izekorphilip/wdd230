@@ -50,7 +50,11 @@
         </div>
     </div>
     <main>
-
+        <div class="invite-message">
+            <h3>Quick Invitation</h3>
+            <p>You are welcome to this page. Please you are invited to our up coming <br>chamber of commerce meeting on Wednesday at 7:00 p.m.</p>
+            <button class="meeting-btn">❌</button>
+        </div>
         <div class="section-cardd">
            <div class="section-cardd-1">
             <h1>WELCOME TO UGBOR CHAMBER</h1>
@@ -65,23 +69,26 @@
         <div class="section-div">
             <div class=" div-card">
                 <section class="card">
-                    <h2>Events</h2>
-                    <hr class="dashed">
-                    <h4>Ribbon Cutting - The Diam💎nd Shack</h4>
-                    <p>Join us for the opening of The Diamond Shack, Thursday at 1:00 p.m <br><span>more info ...</span></p>
-                    <hr class="dashed">
-                    <p><span>Number of visit:</span> <span class="visited"></span></p>
-                </section>
-                <section class="card">
                     <h2>Weather</h2>
                     <hr class="dashed">
                     <ul class="temperature">
-                        <li>⛈ <span id="temperature"></span>&#8451; <strong>Partly Cloudy</strong></li>
-                        <li>Humidity: <span id="windspeed"></span>%</li>
-                        <li>Wind Chill: <span id="windChill"></span>&#8457;</li>
+                        <div><img id="weather-icon" src="" alt=""></div>
+                        <li><span id="description"></span></li>
+                        <li><span id="temperature"></span></li>
+                        <li><span id="humidity"></span></li>
+                        <li><span id="windspeed"></span></li>
                     </ul>
-    
                 </section>
+                <section class="card">
+                    <h2>Foreast</h2>
+                    <hr class="dashed">
+                    <ul class="temperature">
+                        <li><span id="firstday"></span></li>
+                        <li><span id="secondday"></span></li>
+                        <li><span id="thirdday"></span></li>
+                    </ul>
+                </section>
+                
             </div>
             <div>
                 <section class="excos">
@@ -105,6 +112,11 @@
                         <h3>30+</h3>
                         <p>Excos</p>
                     </div>
+                </section>
+                <section class="events">
+                    <h2>Events</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur nihil tempora non eum repellendus tempore commodi mollitia optio ratione eligendi animi, deserunt consectetur sit harum sapiente aperiam, sequi vero perferendis autem perspiciatis saepe ipsam veritatis? At reiciendis, odit eius accusamus delectus eaque quae minus temporibus nostrum esse sit, unde laborum!</p>
+                    <p><span>Number of visit:</span> <span class="visited"></span></p>
                 </section>
             </div>
         </div>
@@ -149,7 +161,7 @@
     </footer>
 
     <script src="scripts/chamber.js"></script>
-    <script src="scripts/windchill.js"></script>
+
 </body>
 
 </html>

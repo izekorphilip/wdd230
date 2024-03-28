@@ -147,7 +147,29 @@ main {
     padding: 20px;
     padding: 20px;
     max-width: 1200px;
+}
 
+.invite-message {
+    position: absolute;
+    background-color: #e4cece;
+    padding: 20px;
+    border: solid 3px red;
+    line-height: 1.4rem;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    top: 130px;
+    right: 50px;
+    display: none;
+}
+.invite-message h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 15px;
+}
+
+.meeting-btn {
+    position: absolute;
+    right: 5px;
+    top: 5px;
 }
 
 /* discover page css*/
@@ -156,7 +178,7 @@ main {
 .section-cardd {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    line-height: 2rem;
+    line-height: 1.8rem;
 
 }
 
@@ -178,21 +200,30 @@ main {
 
 .div-card {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px;
 }
 
 .card {
-    background-color: #ececec;
+    background-color: #f1f1f1;
     padding: 20px;
-    box-shadow: 0px 3px 5px #37353f;
-    line-height: 2rem;
+    box-shadow: 0px 3px 5px #b1b0b3;
+    line-height: 1.8rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     list-style: none;
 }
-
+.events{   
+    margin-left: 50px;
+    padding: 50px;
+    line-height: 1.8rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+}
+.events h2{
+    margin-bottom: 15px;
+}
 .card-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -202,8 +233,8 @@ main {
 }
 
 .card-11 {
-    background-color: #caccca;
-    box-shadow: 0px 3px 5px #44414d;
+    background-color: #f1f1f1;
+    box-shadow: 0px 3px 5px #b1b0b3;
     padding-top: 15px;
     padding-bottom: 15px;
     line-height: 2rem;
@@ -579,9 +610,10 @@ section p {
         padding-top: 10px;
     }
 
-    .hero-img{
+    .hero-img {
         position: relative;
     }
+
     .hero-img img {
         margin-top: 150px;
     }
