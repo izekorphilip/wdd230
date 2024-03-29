@@ -1,3 +1,8 @@
+const d = new Date();
+let year = d.getFullYear();
+document.getElementById('lastModified').innerHTML = (`Last Modifification: ${document.lastModified}`);
+
+
 const url = "https://izekorphilip.github.io/wdd230/chamber/data/members.json";
 const direcard = document.querySelector('.directory-card');
 

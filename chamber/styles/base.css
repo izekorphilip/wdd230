@@ -161,7 +161,8 @@ main {
     right: 50px;
     display: none;
 }
-.invite-message h3{
+
+.invite-message h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 15px;
 }
@@ -214,16 +215,24 @@ main {
     margin-bottom: 20px;
     list-style: none;
 }
-.events{   
+
+.events {
     margin-left: 50px;
     padding: 50px;
     line-height: 1.8rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: large;
 }
-.events h2{
+
+.events h2 {
     margin-bottom: 15px;
 }
+
+.excos h2 {
+    margin-bottom: 30px;
+    margin-left: 70px;
+}
+
 .card-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

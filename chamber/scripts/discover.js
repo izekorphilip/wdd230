@@ -56,7 +56,24 @@ localStorage.clear();
 //let newDate = localStorage.setItem( 'current', Date.now());
 
 const visitsDisplay = document.querySelector(".newvisited");
+let today = new Date();
+let message = "Welcome! Let us know if you have any questions.";
+let lastVisit = window.localStorage.getItem("visit");
 
+if(lastVisit != null){
+    let lastTimeVisit = new Date(lastVisit);
+    let difference = Math.floor((today.getTime() - lastTimeVisit.getTime())/ (24 * 60 * 60 * 1000 ));
+    message = `Last visited ${difference} day ago`;
+
+}
+visitsDisplay.textContent = message;
+
+window.localStorage.setItem("visit", today.toString());
+
+
+
+
+/*
 let firstvisit = window.localStorage.getItem('visitedOne') || 0 ;
 if (firstvisit !== 0){
     visitsDisplay.textContent = firstvisit;
@@ -69,7 +86,7 @@ if (firstvisit !== 0){
 }
 firstvisit++
 window.localStorage.setItem('visitedOne', firstvisit);
-
+*/
 
     /*
      else if(firstvisit == 1){

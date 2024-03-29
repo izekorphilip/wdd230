@@ -44,7 +44,6 @@ numVisited++;
 
 localStorage.setItem('visitedNumber', numVisited);
 
-
 const humidity = document.querySelector('#humidity');
 const temperature = document.querySelector('#temperature');
 const weatherDesc = document.querySelector('#description');
@@ -92,13 +91,34 @@ const meetBtn = document.querySelector('.meeting-btn');
 
 const invite = document.querySelector('.invite-message')
 
-setTimeout(invitee, 3000)
+
 meetBtn.addEventListener('click',removeBtn);
 function removeBtn(){
+
+
 	invite.remove()
 }
-
+let love = document.querySelector('.love1')
+let todayDay = new Date();
+let dayToday = todayDay.getDay();
+setTimeout(invitee, 3000)
 function invitee(){
-	invite.style.display = 'block'
-
+	if(dayToday === 1 || dayToday === 2 || dayToday === 3 && numVisited === 1) {
+		invite.style.display = 'block'
+	} else {
+		invite.style.display = 'none'
+	}	
 }
+
+/*
+let newVisited = Number(window.localStorage.getItem("visitedNumber")) || 0;
+
+if (newVisited !== 0) {
+	inviteBanner.style.display = 'block';
+} else {
+	inviteBanner.style.display = 'none'
+}
+
+
+localStorage.setItem('visitedNumber', newVisited);
+*/
