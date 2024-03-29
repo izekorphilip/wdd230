@@ -187,8 +187,9 @@ main {
     padding: 15px;
 }
 
-.section-cardd h1 {
-    line-height: 3rem;
+.section-cardd h2 {
+    margin-top: 30px;
+    line-height: 2.5rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
