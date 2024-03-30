@@ -79,6 +79,11 @@ header {
     list-style: none;
     color: #0000;
 }
+.nav-1{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 15px;
+}
 
 .navigation a {
     display: none;
@@ -229,9 +234,10 @@ main {
     margin-bottom: 15px;
 }
 
-.excos h2 {
+.highlight{
     margin-bottom: 30px;
-    margin-left: 70px;
+    margin-left: 100px;
+    margin-top: 30px;
 }
 
 .card-1 {
@@ -301,21 +307,25 @@ aside {
     text-align: center;
 }
 
-.button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
-    margin-top: 10px;
+
+aside .button {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
 }
 
-aside button {
-    height: 50px;
-    width: 100px;
-    background-color: #585757;
-    color: white;
+aside .button a {
+    padding: 10px;
+    background-color: #050772;
     border-radius: 5px;
-    border: 0;
+    color: white;
+    text-decoration: none;
+}
+
+aside .button a:hover {
+    background-color: #8a8686;
+    color: black;
+    transition: 0.5s;
 }
 
 .aside-div h4 {
@@ -634,5 +644,38 @@ section p {
         position: absolute;
         top: 65%;
         left: 35%;
+    }
+
+    .events {
+        margin-left: 1px;
+        padding: 1px;
+        line-height: 1.8rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: large;
+    }
+
+    .events h2 {
+        margin-bottom: 15px;
+        margin-top: 30px;
+    }
+
+    .highlight{
+        margin-bottom: 30px;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+    .input {
+        height: 20px;
+        width: 20px;
+    }
+    header h2{
+        font-size: small;
+        margin-left: 10px;
+    }
+    .hero-img img {
+        margin-top: 100px;
+    }
+    .logo img{
+        margin-left: 0px;
     }
 }
