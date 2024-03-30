@@ -99,7 +99,13 @@ header {
 .open a {
     display: block;
 }
-
+.number{
+    background-color: #dfdfdf;
+    
+    white-space: nowrap;
+    padding: 10px;
+    width: 200px;
+}
 .active::before {
     content: "👀";
     /* just a wayfinding symbol for the user */
