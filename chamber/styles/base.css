@@ -6,8 +6,7 @@
 
 .input {
     height: 30px;
-    width: 30px;
-    margin-bottom: -20px;
+    width: 30px;;
 }
 
 .dark-mode {
@@ -79,11 +78,7 @@ header {
     list-style: none;
     color: #0000;
 }
-.nav-1{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 15px;
-}
+
 
 .navigation a {
     display: none;
@@ -677,5 +672,10 @@ section p {
     }
     .logo img{
         margin-left: 0px;
+    }
+    .nav-1{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 15px;
     }
 }

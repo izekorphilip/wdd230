@@ -13,7 +13,7 @@ dateTime.textContent = timeDate;
 
 button.addEventListener("click", (event) => {
   button.textContent = `Click count: ${event.detail}`;
-*/
+});
 const currentDate = new Date();
 let currentTime = localStorage.setItem( 'myTime', Date.now())
 let button = document.querySelector('.btn');
@@ -28,7 +28,7 @@ button.addEventListener("click", () => {
 const date = new Date();
 const milliseconds = date.getMilliseconds();
 console.log(milliseconds);
-
+*\
 /*
 Membership level benefits should be displayed to the side of the form in larger views.
  For example, a two column layout may be appropriate. Try to keep things uniform and visually appealing.
