@@ -1,13 +1,34 @@
 const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
 
-
-
+const navTop = document.querySelector('.nav-top');
+const link = document.querySelector('link')
+/*
 hamButton.addEventListener('click', () => {
-	navigation.classList.toggle('open');
+	navTop.classList.toggle('open').innerHTML = navigation;
 	hamButton.classList.toggle('open');
 });
 
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+	x.style.display = "none";
+  } else {
+	x.style.display = "block";
+  }
+}
+*/
+
+hamButton.addEventListener('click', () => {
+	let navigation = document.querySelector('.nav-mobile');
+
+	if (navigation.style.display === 'flex'){
+		navigation.style.display = 'none';
+		hamButton.textContent = '☰';
+	} else{ 
+		navigation.style.display = 'flex';
+		hamButton.textContent = 'x';
+	}
+});
 const d = new Date();
 let year = d.getFullYear();
 document.getElementById('lastModified').innerHTML = (`Last Modifification: ${document.lastModified}`);
@@ -85,15 +106,15 @@ function displayweatherApi(current) {
 	firstDay.innerHTML = `${current.list[6].dt_txt}: ${current.list[6].main.temp} &deg;F`;
 	secondDay.innerHTML = `${current.list[14].dt_txt}: ${current.list[14].main.temp} &deg;F`;
 	thirdDay.innerHTML = `${current.list[22].dt_txt}: ${current.list[22].main.temp} &deg;F`;
-}	
+}
 
 const meetBtn = document.querySelector('.meeting-btn');
 
 const invite = document.querySelector('.invite-message')
 
 
-meetBtn.addEventListener('click',removeBtn);
-function removeBtn(){
+meetBtn.addEventListener('click', removeBtn);
+function removeBtn() {
 
 
 	invite.remove()
@@ -102,23 +123,11 @@ let love = document.querySelector('.love1')
 let todayDay = new Date();
 let dayToday = todayDay.getDay();
 setTimeout(invitee, 3000)
-function invitee(){
-	if(dayToday === 1 || dayToday === 2 || dayToday === 3 && numVisited === 1) {
+function invitee() {
+	if (dayToday === 1 || dayToday === 2 || dayToday === 3 && numVisited === 1) {
 		invite.style.display = 'block'
 	} else {
 		invite.style.display = 'none'
-	}	
+	}
 }
 
-/*
-let newVisited = Number(window.localStorage.getItem("visitedNumber")) || 0;
-
-if (newVisited !== 0) {
-	inviteBanner.style.display = 'block';
-} else {
-	inviteBanner.style.display = 'none'
-}
-
-
-localStorage.setItem('visitedNumber', newVisited);
-*/

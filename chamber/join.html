@@ -20,7 +20,7 @@
 
 <body>
     <header>
-        <button id="menu"></button>
+        <button id="menu">☰</button>
         <div class="logo"><img src="images/favicon.webp" alt=" Website logo"></div>
         <h2>Ugbor Chamber of Commerce</h2>
         <div class="list-1">
@@ -28,10 +28,10 @@
             <div><a href="https://www.linkedin.com">linkedin</a></div>
         </div>
         <nav class="navigation">
-            <a href="#" title="home">Home</a>
+            <a href="index.html" title="home">Home</a>
             <a href="discover.html" title="discover">Discover</a>
-            <a href="#" title="directory">Directory</a>
-            <a href="#" title="join">Join</a>
+            <a href="directory.html" title="directory">Directory</a>
+            <a href="join.html" title="join">Join</a>
             <!-- Rounded switch -->
             <label class="switch">
                 <input class="input" type="checkbox">
@@ -39,6 +39,13 @@
             </label>
         </nav>
     </header>
+    <div class="hero-img">
+        <div class="nav-mobile">
+            <a href="index.html" title="home">Home</a>
+            <a href="discover.html" title="discover">Discover</a>
+            <a href="directory.html" title="directory">Directory</a>
+            <a href="join.html" title="join">Join</a>
+        </div>
 
     <main>
         <div class="div-form">
@@ -55,7 +62,7 @@
                     <fieldset>
                         <legend>Contact Form</legend>
                         <label for="firstname"> First Name* <input type="text" name="fname" id="firstname" required></label>
-                        <label for="lastname"> Last Name* <input type="text" name="lname" id="lastname" required></label>
+                        <label f or="lastname"> Last Name* <input type="text" name="lname" id="lastname" required></label>
                         <label for="email"> Email* <input type="email" name="email" id="email"
                                 placeholder="somebody@gmail.com" required></label>
                         <label for="phone"> Phone* <input type="tel" name="phone" id="phone" required></label>
@@ -72,7 +79,7 @@
                     </fieldset>
                     <button class="btn">Join Us</button>
                 </form>
-                <div>
+                <div class="memb">
                     <h3> Membership Stages</h3>
                     <p><strong>Cost:</strong> <span class="generalcost"></span></p>
                     <p><strong>Benefits:</strong> <span class="generalbenefit"></span></p>

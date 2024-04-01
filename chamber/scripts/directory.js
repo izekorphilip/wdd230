@@ -1,13 +1,9 @@
-const d = new Date();
-let year = d.getFullYear();
-document.getElementById('lastModified').innerHTML = (`Last Modifification: ${document.lastModified}`);
 
-
-const url = "https://izekorphilip.github.io/wdd230/chamber/data/members.json";
+const urlink = "https://izekorphilip.github.io/wdd230/chamber/data/members.json";
 const direcard = document.querySelector('.directory-card');
 
 async function getdirectory(){
-    const response = await fetch(url);
+    const response = await fetch(urlink);
     const data = await response.json();
     //console.table(data.companies);
     displaydirectory(data.companies)
