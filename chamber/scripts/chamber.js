@@ -21,12 +21,14 @@ function myFunction() {
 hamButton.addEventListener('click', () => {
 	let navigation = document.querySelector('.nav-mobile');
 
-	if (navigation.style.display === 'flex'){
+	if (navigation.style.display === 'flex') {
 		navigation.style.display = 'none';
 		hamButton.textContent = '☰';
-	} else{ 
+		navigation.style.display = 'sticky';
+	} else {
 		navigation.style.display = 'flex';
 		hamButton.textContent = 'x';
+		
 	}
 });
 const d = new Date();

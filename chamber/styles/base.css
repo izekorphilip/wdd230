@@ -6,7 +6,8 @@
 
 .input {
     height: 30px;
-    width: 30px;;
+    width: 30px;
+    ;
 }
 
 .dark-mode {
@@ -89,12 +90,13 @@ header {
 
 /* when the button is clicked - the open class is toggled (added/removed) */
 
-.number{
+.number {
     background-color: #dfdfdf;
     white-space: nowrap;
     padding: 10px;
     width: 200px;
 }
+
 .active::before {
     content: "👀";
     /* just a wayfinding symbol for the user */
@@ -200,9 +202,11 @@ main {
     grid-template-rows: 1fr 1fr;
     gap: 1px;
 }
-.nav-mobile{
+
+.nav-mobile {
     display: none;
 }
+
 .card {
     background-color: #f1f1f1;
     padding: 20px;
@@ -226,7 +230,7 @@ main {
     margin-bottom: 15px;
 }
 
-.highlight{
+.highlight {
     margin-bottom: 30px;
     margin-left: 100px;
     margin-top: 30px;
@@ -269,23 +273,34 @@ main {
 
 
 footer {
-    margin-top: 20px;
-    padding: 50px;
     background-color: #ecb89a;
     justify-content: space-between;
+    padding:  auto;
 }
 
 .most-last {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    line-height: 1.5rem;
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
 }
-
+.most-last .logo img{
+    width: 100px;
+    margin: auto;
+}
+.most-last .logo{
+    text-align: center;
+    
+}
 .last {
     display: flex;
     gap: 20px;
     color: rgba(255, 0, 0, 0.945);
     line-height: 2rem;
     justify-content: space-between;
+    padding: 20px;
 }
 
 /* discover page css*/
@@ -450,7 +465,11 @@ aside .button a:hover {
     justify-content: center;
     align-items: center;
 }
-
+#w3review {
+    width: 310px;
+    margin-top: 10px;
+    border: solid 1px;
+}
 .div-form {
     padding-top: 150px;
     margin-left: 50px;
@@ -650,116 +669,178 @@ section p {
         margin-top: 30px;
     }
 
-    .highlight{
+    .highlight {
         margin-bottom: 30px;
         margin-left: 0px;
         margin-top: 30px;
     }
+
     .input {
         height: 20px;
         width: 20px;
     }
-    header h2{
+
+    header h2 {
         font-size: small;
         margin-left: 10px;
     }
-    header{
+
+    header {
         margin-top: -100px;
     }
+
     .hero-img img {
         margin-top: 0px
     }
-    .hero-img{
+
+    .hero-img {
         margin-top: 100px;
     }
-    .logo img{
+
+    .logo img {
         margin-left: 0px;
     }
-    .nav-1{
+
+    .nav-1 {
         display: grid;
         grid-template-rows: 1fr 1fr;
         row-gap: 15px;
     }
-    .nav-mobile{
-      background-color: #ededee;
-      margin-top: 10px;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      padding: 10px;
-      text-align: center;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      font-weight: 300;
-      display: none;
-      width: 100%;
+
+    .nav-mobile {
+        background-color: #ededee;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 300;
+        display: none;
+        width: 100%;
     }
-    .nav-mobile a{
+
+    .nav-mobile a {
         text-decoration: none;
-      color: #4fca1e;
+        color: #4fca1e;
     }
-    .nav-mobile a:hover{
+
+    .nav-mobile a:hover {
         background-color: #333030;
-        color: white;transition: 1s;
+        color: white;
+        transition: 1s;
     }
-    #m-discover{
+
+    #m-discover {
         margin-top: 0px;
         margin-left: -20px;
     }
-    .button{
+
+    .button {
         margin-bottom: 30px;
     }
+
     #discover {
         margin: 0px;
     }
-    #discover p  {
+
+    #discover p {
         margin-top: -10px;
         margin-bottom: 20px;
     }
-    #discover h2{
+
+    #discover h2 {
         margin-top: 25px;
     }
-    #discover img{
+
+    #discover img {
         width: 300px;
     }
+
     #discover img:hover {
         opacity: 0.3;
         zoom: 0.9;
         transition-duration: 2s;
     }
-    .menu{
+
+    .menu {
         margin-top: -10px;
     }
-    .list section{
+
+    .list section {
         display: grid;
         grid-template-columns: 1fr;
         padding-top: 20px;
         padding-bottom: 20px;
         line-height: 1.5rem;
     }
-    .div-form{
+
+    .div-form {
         margin: -10px;
         margin-top: -150px;
     }
-    .div-form p{
+
+    .div-form p {
         padding: 10px;
     }
-    .form-div{
+
+    .form-div {
         display: grid;
         grid-template-columns: 1fr;
     }
+
     .conform input[type="text"],
     .conform input[type="tel"],
     .conform input[type="email"],
     .conform input[type="number"] {
-    width: 100%;
-    max-width: 400px;
+        width: 100%;
+        max-width: 400px;
     }
-    #w3review{
+
+    #w3review {
         width: 310px;
         margin-top: 10px;
         border: solid 1px;
     }
-    .memb{
+
+    .memb {
         padding: 20px;
+    }
+
+    .most-last {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        line-height: 1.5rem;
+    }
+    .last{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 5px;
+    }
+    .most-last .logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        margin-top: 0px;
+        margin-bottom: 20px;
+
+    }
+    .most-last h2{
+        margin-bottom: 15px;
+    }
+    .dashed{
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .highlight {
+        margin-bottom: 30px;
+        
+    }
+    .card{
+        margin-bottom: -30px
     }
 }
