@@ -10,7 +10,7 @@
                     "fullday": "$30"
                 }    
             ],
-            "walk-in": [
+            "walkin": [
                 {
                     "halfday": "$25",
                     "fullday": "$35"
