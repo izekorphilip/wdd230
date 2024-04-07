@@ -1,0 +1,84 @@
+{
+    "rentals": [
+        {
+            "brand": "C Charles Resources Ltd",
+            "addresses": "Block 4 House 3 Moore Road, off Harvey Rd, Yaba, Lagos Nigeria",
+            "phone": "+2348033030235 +23408074067017",
+            "email": "sales@ccharlesresources.com",
+            "websiteURL": "https://www.ccharlesresources.com/",
+            "imageName": "https://www.ccharlesresources.com/assets/frontend/img/logo/logo2.png",
+            "membershipLevel": "Bronze Membership",
+            "location": "Lagos Nigeria"
+        },
+        {
+            "name": "Budelak Technologies Nigeria Ltd",
+            "addresses": "27, Ogunlana Drive, Surulere, Lagos Nigeria",
+            "phone": "+2348098283352, +2348055058010",
+            "email": "sales@budelak.com",
+            "websiteURL": "https://www.budelak.com/",
+            "imageName": "https://budelak.com/old/web/images/logo.png",
+            "membershipLevel": "Silver Membership",
+            "location": "Lagos Nigeria"
+        },
+        {
+            "name": "Ensure Services",
+            "addresses": "122-132 Oshodi - Apapa Expressway, Isolo, Lagos Nigeria",
+            "phone": "+2348077098619",
+            "email": "dmensureservices@gmail.com",
+            "websiteURL": "https://www.ensureservices.com/",
+            "imageName": "https://www.ensureservices.com/wp-content/uploads/2023/05/logo.png.webp",
+            "membershipLevel": "NP Membership",
+            "location": "Lagos Nigeria"
+        },
+        {
+            "name": "Vassion Media",
+            "addresses": "GRA, Port Harcourt, Port Harcourt, Rivers State",
+            "phone": "+2347060706496",
+            "email": "info@alliedcomputers-nig.com",
+            "websiteURL": "https://alliedcomputersng.com/home/",
+            "imageName": "https://alliedcomputersng.com/wp-content/uploads/2021/01/logo3.png",
+            "membershipLevel": "NP Membership",
+            "location": "Port Harcourt"
+        },
+        {
+            "name": "Allied Computers",
+            "addresses": "227, Ikorodu Road, Ilupeju, Lagos, Nigeria",
+            "phone": "+2349087123997, +2349087467986",
+            "email": "support@vassionmedia.com",
+            "websiteURL": "https://vassionmedia.com/",
+            "imageName": "https://vassionmedia.com/wp-content/uploads/2019/04/cropped-VASSION-LOGO-140x54.png",
+            "membershipLevel": "Gold Membership",
+            "location": "Lagos, Nigeria"
+        },
+        {
+            "name": "Nerotranos Technologies Limited",
+            "addresses": "37 Harper Crescent, Wuse Zone 7 Abuja, FCT",
+            "phone": "+2348058083423, +2348182144307",
+            "email": "contact@nerotranos.com",
+            "websiteURL": "http://www.nerotranos.com/",
+            "imageName": "https://www.nerotranos.com/images/logo-orange.fw.png",
+            "membershipLevel": "Bronze Membership",
+            "location": "Abuja, Nigeria"
+        },
+        {
+            "name": "Spreadweb",
+            "addresses": "402 Road, Opposite A Close, Festac Town, Lagos Nigeria",
+            "phone": "+2348130170906, +2348026298030",
+            "email": "info@spreadweb.com.ng",
+            "websiteURL": "https://www.spreadweb.net/",
+            "imageName": "https://spreadweb.net/wp-content/uploads/2020/05/spreadweb-logo-animation-2.gif",
+            "membershipLevel": "Silver Membership",
+            "location": "Lagos Nigeria"
+        },
+        {
+            "name": "IBD Hotels",
+            "addresses": "5 Sam Ewang Junction, Abiola Way, Abeokuta, Ogun Nigeria",
+            "phone": "+2348023408392, +2349080463297",
+            "email": "info@ibdhotels.com",
+            "websiteURL": "http://ibdhotels.com/",
+            "imageName": "https://ibdhotels.com/img/logo.png",
+            "membershipLevel": "Gold Membership",
+            "location": "Abeokuta, Ogun Nigeria"
+        }
+    ]
+}
