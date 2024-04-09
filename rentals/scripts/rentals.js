@@ -1,6 +1,7 @@
 const hamButton = document.querySelector('.menu');
 let logo = document.querySelector('.logo')
 let companyName = document.querySelector('.company-name');
+let tempbtn = document.querySelector('.collapsible')
 
 const mediaQuery = window.matchMedia('(max-width: 500px)')
 hamButton.addEventListener('click', () => {
@@ -11,11 +12,13 @@ hamButton.addEventListener('click', () => {
 		hamButton.textContent = '☰';
         logo.style.display = 'flex';
         companyName.style.display = 'flex';
+        tempbtn.style.display = 'block';
 	} else {
 		navigation.style.display = 'flex';
 		hamButton.textContent = '❌';
         logo.style.display = 'none';
 		companyName.style.display = 'none';
+    tempbtn.style.display = 'none';
 	}
 });
 
