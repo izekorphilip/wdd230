@@ -17,7 +17,7 @@ h3 {
 p{
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 15px;
-    line-height: 1.5rem;
+    line-height: 1.7rem;
     font-size: larger;
 }
 h1{
@@ -422,15 +422,7 @@ table tr:nth-child(even){
     .menu{
         display: flex;
     }
-    .card{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .card-2{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .island{
+    .card, .agreement, .card-2, .island{
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -450,14 +442,12 @@ table tr:nth-child(even){
         padding-top: 0px;
     }
     .product-info h1{
-        line-height: rem;
         font-size: large;
         margin-top: -20px;
         margin-bottom: -40px;
     }
-    .card-2 p{
+    .card-2 p, .agreement p{
         padding: 0px;
-        line-height: 1.7rem;
         padding-bottom: 10px;
     }
     main{
