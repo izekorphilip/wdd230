@@ -138,6 +138,7 @@ nav a:hover {
 }
 .card-2 img{
     width: 100%;
+    height: auto;
     border-radius: 5px;
 }
 .highspeed{
@@ -145,7 +146,7 @@ nav a:hover {
 }
 .high-speed{
     position: absolute;
-    top: 60%;
+    top: 50%;
     color: white;  
 }
 .product-info{
@@ -202,13 +203,12 @@ nav a:hover {
     background-color: #525252;
     color: #ffffff;
     cursor: pointer;
-    padding: 5px;
-    width: 12%;
+    padding: 7px;
+    width: 4%;
     border: none;
     text-align: center;
-    outline: none;
-    font-size: 15px;
-    margin-right: -10px;
+
+   
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -218,10 +218,11 @@ nav a:hover {
   
   /* Style the collapsible content. Note: hidden by default */
   .content {
-    padding: 0 12px;
+    padding: 0 6px;
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
+    font-size: small;
   }
 
   .rentals {
@@ -372,6 +373,29 @@ table tr:nth-child(even){
 .map{
     width: 100%;
 }
+
+.div-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.dashed{
+    background-color: #179b17;
+}
+.section-card{
+    box-shadow: 2px 2px 15px #c8c7c9;
+    padding: 30px;
+}
+.section-card li{
+    list-style-type: none;
+}
+.section-card img{
+    display: block;
+    margin: 0px;
+} 
+.section-card #weather-icon{
+    width: 100px;
+}
 /* small screen*/
 @media (max-width: 500px) {
     nav {
@@ -463,15 +487,10 @@ table tr:nth-child(even){
     .rentals a:hover{
         background-color: #445ba5;
     }
-    .high-speed h2{
-        font-size: large;
-    }
-    .high-speed{
-        top: 100px;
-    }
     .high-speed p{
         margin-left: 13px;
     }
+    
     .island img{
         border-radius: 5px;
     }
@@ -513,10 +532,9 @@ table tr:nth-child(even){
     .conform input[type="country"],
     .conform select{
         width: 100%;
-        max-width: 400px;
     }
     #w3review {
-        width: 300px;
+        width: 280px;
         height: 70px;
         margin-top: 10px;
         margin-right: 8px;
@@ -524,6 +542,9 @@ table tr:nth-child(even){
     }
     .reservation{
         padding: 0px;
+    }
+    .reservation img{
+        padding: 20px;
     }
     .conform h3{
         white-space: nowrap;
@@ -535,6 +556,8 @@ table tr:nth-child(even){
     .map iframe{
         width: 100%;
         height: 60%;
+        padding-left: 20px;
+        padding-right: 20px
     }
     .rentals-btn{
         margin-bottom: 40px;
@@ -551,5 +574,9 @@ table tr:nth-child(even){
         text-decoration:none ;
         font-size: larger;
         white-space: nowrap;
+    }
+    .collapsible{
+        width: auto;
+        text-align: center;
     }
 }

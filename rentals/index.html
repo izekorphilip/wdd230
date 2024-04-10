@@ -10,6 +10,7 @@
     <meta property="og:type" content="Web Frontend Development Project">
     <meta property="og:image" content="https://lh5.googleusercontent.com/p/AF1QipPKRgE7StYeAwGdOBpKo-5-sE248xnW9rZaiM-8=w408-h306-k-no">
     <meta property="og:url" content="https://izekorphilip.github.io/wdd230">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/rentals.css">
     <link rel="icon" href="images/favicon.ico">
 </head>
@@ -25,7 +26,7 @@
         </nav>
         <button type="button" class="collapsible">🌞</button>
         <div class="content">
-        <p>Lorem ipsum...nnn</p>
+        <p> <span class="content-test"></span></p>
         </div>
         <div class="menu">☰</div>
     </header>
@@ -96,6 +97,30 @@
             <section>
                 <img src="images/islandImage-2.webp" alt=" island Image" loading="lazy" width="450" height="250">
             </section>
+        </div>
+        <div class="div-card">
+            <section class="section-card">
+                <h2>Weather</h2>
+                <hr class="dashed">
+                <img id="weather-icon" src="" alt="weather icon">
+                <ul class="temperature">
+
+                    <li><span id="description"></span></li>
+                    <li><span id="temperature"></span></li>
+                    <li><span id="humidity"></span></li>
+                    <li><span id="windspeed"></span></li>
+                </ul>
+            </section>
+            <section class="section-card">
+                <h2>Foreast</h2>
+                <hr class="dashed">
+                <ul class="temperature">
+                    <li><span id="firstday"></span></li>
+                    <li><span id="secondday"></span></li>
+                    <li><span id="thirdday"></span></li>
+                </ul>
+            </section>
+
         </div>
     </main>
     <footer>

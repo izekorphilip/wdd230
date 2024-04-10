@@ -47,5 +47,3 @@ const displaydirectory = (myRentals) => {
         
     });
 }
-
-let reserved = document.querySelector('.reservation')
